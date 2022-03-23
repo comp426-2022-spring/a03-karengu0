@@ -1,4 +1,4 @@
-import { coinFlips, countFlips, coinFlips, flipACoin } from "./modules/coin.mjs";
+import { coinFlips, countFlips, coinFlip, flipACoin } from "./modules/coin.mjs";
 import minimist from 'minimist'; // parses argument options
 import express from 'express'; // minimal & flexible Node.js web application framework
                                 // provides features for web & mobile applications
