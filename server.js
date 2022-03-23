@@ -42,7 +42,7 @@ app.get('/app/flips/:number', (req, res) => {
     var number = req.params.number;
     let flips = coinFlips(number);
     let summary = countFlips(flips);
-    res.json({flips: flips, summary: summary}) //json: way to transfer data
+    res.json({raw: flips, summary: summary}) //json: way to transfer data
                                                 // like a dictionary, key-->string
     res.writeHead(res.statusCode, {'Content-Type': 'application/json'});
 })
